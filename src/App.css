@@ -1,0 +1,108 @@
+.app {
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh;
+}
+
+/* Section styling */
+section {
+  position: relative;
+}
+
+section:nth-child(even) {
+  background-color: var(--light-gray);
+}
+
+/* Animation classes */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.spin-in {
+  opacity: 0;
+  transform: rotate(-5deg) scale(0.9);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.spin-in.visible {
+  opacity: 1;
+  transform: rotate(0) scale(1);
+}
+
+/* Card styling */
+.card {
+  background-color: var(--white);
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-md);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.accent-text {
+  color: var(--primary-color);
+}
+
+.mb-sm {
+  margin-bottom: var(--space-sm);
+}
+
+.mb-md {
+  margin-bottom: var(--space-md);
+}
+
+.mb-lg {
+  margin-bottom: var(--space-lg);
+}
+
+.grid {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.two-col {
+  grid-template-columns: 1fr 1fr;
+}
+
+.three-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.four-col {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 992px) {
+  .four-col {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .two-col, 
+  .three-col {
+    grid-template-columns: 1fr;
+  }
+  
+  .four-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
