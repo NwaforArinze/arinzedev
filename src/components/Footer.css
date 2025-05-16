@@ -64,6 +64,12 @@
     animation: beat 1s infinite alternate;
   }
   
+  .other-icon {
+    color: #fff;
+    display: inline-block;
+    margin: 0.3rem 0.8rem 0 0;
+  }
+  
   @keyframes beat {
     from {
       transform: scale(1);
@@ -75,13 +81,14 @@
   
   @media (max-width: 768px) {
     .footer-content {
+      width: 95%;
       grid-template-columns: 1fr;
       gap: var(--space-md);
+      text-align: center;
     }
     
     .footer-bottom {
       flex-direction: column;
       gap: 0.5rem;
-      text-align: center;
     }
   }

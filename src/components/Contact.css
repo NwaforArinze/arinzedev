@@ -2,7 +2,7 @@
   padding: var(--space-lg) 0 var(--space-xl) 0;
     background-color: var(--light-gray);
   }
-  
+
   .contact-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -96,6 +96,10 @@
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  .icon-spacing {
+    margin-right: 12px; /* or any value you prefer */
+  }
   
   .form-group label {
     font-weight: 500;
@@ -144,6 +148,10 @@
   }
   
   @media (max-width: 768px) {
+    .container{
+      justify-items: center; /* Center the grid items */
+    }
+    
     .contact-content {
       grid-template-columns: 1fr;
     }

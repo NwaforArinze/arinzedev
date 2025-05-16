@@ -56,9 +56,9 @@ const Skills = () => {
   return (
     <section id="skills" className="skills">
       <div className="container">
-        <h2 className="section-title">My Skills</h2>
+        <h2 className="section-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">My Skills</h2>
         <div className="skills-content">
-          <div className="skills-text">
+          <div className="skills-text" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
             <h3>Technical Expertise</h3>
             <p>
               With experience in both WordPress and frontend development, I create
@@ -76,7 +76,7 @@ const Skills = () => {
               <li>React.js development</li>
             </ul>
           </div>
-          <div className="skills-bars">
+          <div className="skills-bars" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
             {skills.map((skill, index) => (
               <div className="skill" key={index}>
                 <div className="skill-info">

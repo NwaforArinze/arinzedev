@@ -68,12 +68,12 @@ const Experience = () => {
 
   return (
     <section id="experience" className="experience-section">
-      <div className="container">
+      <div className="experience-container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <h2 className="section-title">Professional Experience</h2>
         <div className="timeline-container">
           <div className="timeline-line" ref={lineRef}></div>
 
-          <div className="experience-list">
+          <div className="experience-list" data-aos="zoom-out" data-aos-delay="400" data-aos-duration="800">
             {experiences.map((exp, index) => (
               <div
                 key={index}

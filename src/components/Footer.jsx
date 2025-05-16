@@ -1,5 +1,5 @@
 import { Link } from 'react-scroll';
-import { FaHeart } from 'react-icons/fa';
+import { FaHeart, FaHome, FaPhone, FaEnvelope } from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -35,9 +35,9 @@ const Footer = () => {
           
           <div className="footer-contact">
             <h3>Contact</h3>
-            <p>nwaforchideraarinze@gmail.com</p>
-            <p>08135496550</p>
-            <p>Ikotun, Lagos State</p>
+            <p><FaEnvelope className="other-icon" />nwaforchideraarinze@gmail.com</p>
+            <p><FaPhone className="other-icon" />08135496550</p>
+            <p><FaHome className="other-icon" />Ikotun, Lagos State</p>
           </div>
         </div>
         

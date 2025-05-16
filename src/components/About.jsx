@@ -4,12 +4,27 @@ import './About.css';
 const About = () => {
   return (
     <section id="about" className="about">
-      <div className="container">
+      <div className="container" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
         <h2 className="section-title">About Me</h2>
         <div className="about-content">
-          <div className="about-image">
-            <img src="public/imagebg.png" alt="Professional Developer" />
+          
+          {/* Developer Image Block with AOS Animation */}
+          <div className="about-image" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
+            <div className="image-wrapper">
+              <img src="/imagebg.png" alt="Professional Developer" className="image" />
+            </div>
+            <div className="code-bubble">
+              <p className="code-snippet">
+                <span className="keyword">const</span> developer = {'{'} <br />
+                &nbsp;&nbsp;<span className="key">"name"</span>: <span className="value">"Arinzechukwu"</span>,<br />
+                &nbsp;&nbsp;<span className="key">"role"</span>: <span className="value">"Frontend Developer"</span>,<br />
+                &nbsp;&nbsp;<span className="key">"loves"</span>: <span className="value">"Clean Code"</span> <br />
+                {'}'};
+              </p>
+            </div>
           </div>
+
+          {/* About Text & Services */}
           <div className="about-text">
             <p>
               I'm a passionate WordPress and Frontend Developer with hands-on experience in building 
@@ -22,7 +37,7 @@ const About = () => {
               performance optimization and seamless user experiences. I pride myself on clean, 
               well-documented code and pixel-perfect implementations of designs.
             </p>
-            <div className="about-services">
+            <div className="about-services" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <div className="service-card">
                 <FaWordpress className="service-icon" />
                 <h3>WordPress Development</h3>
@@ -43,6 +58,7 @@ const About = () => {
         </div>
       </div>
     </section>
+
   );
 };
 

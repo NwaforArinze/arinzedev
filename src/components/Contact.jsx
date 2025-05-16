@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import emailjs from 'emailjs-com'; // Import EmailJS SDK
-import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaMapMarkerAlt, FaLinkedin, FaGithub, FaPaperPlane } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -89,7 +89,7 @@ const Contact = () => {
         <h2 className="section-title">Get In Touch</h2>
         
         <div className="contact-content">
-          <div className="contact-info">
+          <div className="contact-info" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
             <h3>Contact Information</h3>
             <p>Feel free to reach out if you're looking for a WordPress developer or have any questions.</p>
 
@@ -129,7 +129,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div className="contact-form-container">
+          <div className="contact-form-container" data-aos="fade-left" data-aos-delay="200" data-aos-duration="800">
             {isSubmitted ? (
               <div className="success-message">
                 <h3>Thank you for your message!</h3>
@@ -195,7 +195,7 @@ const Contact = () => {
                   {formErrors.message && <span className="error-message">{formErrors.message}</span>}
                 </div>
 
-                <button type="submit" className="btn btn-primary">Send Message</button>
+                <button type="submit" className="btn btn-primary"><FaPaperPlane className="icon-spacing" />Send Message</button>
               </form>
             )}
           </div>

@@ -2,18 +2,17 @@
     padding: var(--space-lg) 0 var(--space-md) 0;
     background-color: var(--light-gray);
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 16px;
+
+  .experience-container {
+    width: 70%;
+    margin: auto;
   }
   
   .section-title {
     text-align: center;
     font-size: 2.5rem;
     font-weight: bold;
-    color: #1e3a8a;
+    color: var(--primary-dark);
     margin-bottom: 50px;
   }
   
@@ -28,34 +27,33 @@
     left: 50%;
     width: 4px;
     height: 0;
-    background-color: #2563eb;
+    background-color: var(--primary-dark);
     transform: translateX(-50%);
     transition: height 2s ease;
   }
   
   .grow-line {
-    height: 95%;
+    height: 99%;
   }
   
   /* Timeline items */
   .experience-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .experience-item {
     position: relative;
     display: flex;
     align-items: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
     width: 100%;
   }
   
   .experience-dot {
     width: 16px;
     height: 16px;
-    background-color: #2563eb;
+    background-color: var(--primary-dark);
     border-radius: 50%;
     position: absolute;
     left: 50%;
@@ -69,19 +67,19 @@
     background: #ffffff;
     padding: 20px;
     border: 1px solid #e5e7eb;
-    border-radius: 8px;
+    border-radius: var(--border-radius-md);
     width: 50%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     transition: all 0.4s ease;
   }
 
   .experience-item.right .experience-content {
-    margin-left: 60%;
+    margin-left: 55%;
     text-align: left;
   }
   
   .experience-item.left .experience-content {
-    margin-right: 60%;
+    margin-right: 55%;
     text-align: left;
   }
   
@@ -93,11 +91,11 @@
   .experience-title {
     font-size: 1.25rem;
     font-weight: bold;
-    color: #1e40af;
+    color: var(--primary-dark);
   }
   
   .experience-company {
-    color: #2563eb;
+    color: var(--primary-dark);
     margin: 4px 0;
   }
   
@@ -121,10 +119,10 @@
   /* Responsive */
   @media (max-width: 768px) {
     .timeline-container {
-      padding-left: 50px;
+      padding-left: 20px;
     }
     .timeline-line {
-      left: 32px;
+      left: 5px;
     }
     .experience-dot {
         display: none;
@@ -139,7 +137,7 @@
     }
   
     .experience-content {
-      width: 90%;
+      width: 100%;
       margin: 0;
     }
   
@@ -147,18 +145,4 @@
     .experience-item.left .experience-content {
       margin: 0;
     }
-    
   }
-  
-  
-
-
-/*  
-  
-  
-
-  
-  @media (max-width: 768px) {
-    
-  }
-   */

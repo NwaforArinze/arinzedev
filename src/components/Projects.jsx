@@ -74,7 +74,7 @@ const Projects = () => {
 
   return (
     <section id="projects" className="projects">
-      <div className="container">
+      <div className="container" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200">
         <h2 className="section-title">Featured Projects</h2>
         
         <div className="project-filters">

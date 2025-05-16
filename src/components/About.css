@@ -3,11 +3,11 @@
   }
   
   .about-content {
-    width: 90%;
+    /* width: 90%; */
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: var(--space-lg);
+    gap: 10rem;
     align-items: center;
   }
   
@@ -15,7 +15,7 @@
     position: relative;
   }
   
-  .about-image::before {
+  /* .about-image::before {
     content: "";
     position: absolute;
     top: -15px;
@@ -24,7 +24,8 @@
     height: 100%;
     border: 2px solid var(--primary-color);
     z-index: -1;
-  }
+    border-radius: var(--border-radius-md);
+  } */
   
   .about-image img {
     border-radius: var(--border-radius-md);
@@ -76,6 +77,52 @@
     margin-bottom: 0;
   }
   
+  .image-wrapper {
+    aspect-ratio: 1 / 1;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 1rem;
+    border: 4px solid rgba(59, 130, 246, 0.2);
+  }
+  
+  .image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .code-bubble {
+    position: absolute;
+    bottom: -3rem;
+    right: -8rem;
+    padding: 1rem;
+    background-color: var(--card, #fff);
+    border-radius: 0.5rem;
+    border: 1px solid var(--border, #e5e7eb);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+  
+  .code-snippet {
+    font-family: monospace;
+    font-size: 0.875rem;
+    line-height: 1.4;
+  }
+  
+  .code-snippet .keyword {
+    color: var(--primary-color);
+    font-weight: bold;
+  }
+  
+  .code-snippet .key {
+    color: #22c55e; /* green-500 */
+  }
+  
+  .code-snippet .value {
+    color: #f59e0b; /* amber-500 */
+  }
+  
+  
   @media (max-width: 992px) {
     .about-services {
       grid-template-columns: 1fr 1fr;
@@ -84,7 +131,9 @@
   
   @media (max-width: 768px) {
     .about-content {
+      width: 100%;
       grid-template-columns: 1fr;
+      gap: var(--space-md);
     }
     
     .about-image {
@@ -93,5 +142,15 @@
     
     .about-services {
       grid-template-columns: 1fr;
+    }
+
+    .image-wrapper {
+      aspect-ratio: 0;
+    }
+
+    .code-bubble {
+      bottom: -3rem;
+      right: -1rem;
+      padding: 1rem;
     }
   }
