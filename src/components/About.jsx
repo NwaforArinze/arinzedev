@@ -11,7 +11,7 @@ const About = () => {
           {/* Developer Image Block with AOS Animation */}
           <div className="about-image" data-aos="fade-right" data-aos-duration="600" data-aos-once="true">
             <div className="image-wrapper">
-              <img src="/imagebg.png" alt="Professional Developer" className="image" />
+              <img src="/profile.png" alt="Professional Developer" className="image" />
             </div>
             <div className="code-bubble">
               <p className="code-snippet">

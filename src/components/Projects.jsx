@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 import './Projects.css';
 
 const Projects = () => {
