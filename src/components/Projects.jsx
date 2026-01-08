@@ -126,6 +126,24 @@ const Projects = () => {
       liveLink: "https://lumispark.co.uk/",
       // codeLink: '#'
     },
+    {
+      id: 10,
+      title: "Bookstore E-Commerce Website",
+      category: "woocommerce",
+      image: "graceNgrit.png",
+      description:
+        "Built a fully functional WooCommerce bookstore with dynamic product pages, author taxonomy, price filtering, and Paystack payment integration. Designed using Elementor for custom layouts and responsive, user-friendly experience across all devices.",
+      technologies: [
+        "WordPress",
+        "Elementor",
+        "WooCommerce",
+        "Paystack API",
+        "ACF",
+        "HTML/CSS/JavaScript",
+      ],
+      liveLink: "https://demo.wowdev.com.ng/",
+      // codeLink: '#'
+    },
   ];
 
   const filteredProjects =
@@ -156,12 +174,12 @@ const Projects = () => {
           >
             WordPress
           </button>
-          {/* <button 
-            className={`filter-btn ${filter === 'react' ? 'active' : ''}`}
-            onClick={() => setFilter('react')}
+          <button
+            className={`filter-btn ${filter === "woocommerce" ? "active" : ""}`}
+            onClick={() => setFilter("woocommerce")}
           >
-            React
-          </button> */}
+            Woocommerce
+          </button>
           <button
             className={`filter-btn ${filter === "frontend" ? "active" : ""}`}
             onClick={() => setFilter("frontend")}
